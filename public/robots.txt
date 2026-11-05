@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reyparaiso.vercel.app/sitemap.xml

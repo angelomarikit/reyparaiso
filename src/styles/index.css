@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/500.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/500-italic.css";
+@import "@fontsource/manrope/400.css";
+@import "@fontsource/manrope/500.css";
+@import "@fontsource/manrope/600.css";
+@import "@fontsource/manrope/700.css";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: Manrope, ui-sans-serif, system-ui, sans-serif;
+  --color-navy: #101b2b;
+  --color-deep: #17263a;
+  --color-gold: #c6a76a;
+  --color-gold-soft: #d8c49a;
+  --color-ivory: #f6f4ef;
+  --color-warm: #f8f7f3;
+  --color-mist: #b6beca;
+  --color-ink: #101b2b;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  background: #101b2b;
+  color: #f8f7f3;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #c6a76a;
+  color: #101b2b;
+}
+
+:focus-visible {
+  outline: 2px solid #c6a76a;
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
