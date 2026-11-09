@@ -1,11 +1,11 @@
 export const site = {
   url: 'https://reyparaiso.vercel.app',
   name: 'Rey Paraiso',
-  secondaryName: 'KURA YEY',
+  secondaryName: 'Teacher Rey',
   legalName: 'Reynald E. Paraiso',
   title: 'Rey Paraiso | Singer, Acoustic Performer & Event Host in Cavite',
   description:
-    'Discover Rey Paraiso (KURA YEY), a Filipino singer, acoustic performer, songwriter, event host, and music tutor based in General Trias, Cavite. Explore his performances and inquire about bookings.',
+    'Discover Rey Paraiso (Teacher Rey), a Filipino singer, acoustic performer, songwriter, event host, and music tutor based in General Trias, Cavite. Explore his performances and inquire about bookings.',
   email: 'reyparaiso78@gmail.com',
   phoneDisplay: '0995-106-3741',
   phoneTel: '+639951063741',

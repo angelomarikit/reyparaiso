@@ -2,11 +2,11 @@ export const profile = {
   eyebrowHero: 'Singer • Acoustic Performer • Event Host',
   headline: ['Every Stage Has a Story.', 'Let Rey Tell Yours.'],
   heroCopy:
-    'Meet Rey Paraiso, also known as KURA YEY — a Filipino singer, acoustic performer, songwriter, host, and music tutor bringing music, connection, and memorable moments to every stage.',
+    'Meet Rey Paraiso, also known as Teacher Rey — a Filipino singer, acoustic performer, songwriter, host, and music tutor bringing music, connection, and memorable moments to every stage.',
   aboutEyebrow: 'The Person Behind the Music',
   aboutTitle: ['More Than a Voice.', 'A Story Worth Sharing.'],
   about: [
-    'Reynald E. Paraiso, known professionally as Rey Paraiso and also recognized as KURA YEY, is a Filipino singer, acoustic performer, host, songwriter, music tutor, and aspiring educator.',
+    'Reynald E. Paraiso, known professionally as Rey Paraiso and also recognized as Teacher Rey, is a Filipino singer, acoustic performer, host, songwriter, music tutor, and aspiring educator.',
     'His journey brings together a long-standing passion for music, live entertainment, church and community service, hospitality experience, and a continuing commitment to education.',
     'From an early age, music became an important part of his life. Through performances in church, school, community gatherings, talent competitions, and acoustic venues, he developed his voice, stage confidence, and ability to connect with different audiences.',
   ],

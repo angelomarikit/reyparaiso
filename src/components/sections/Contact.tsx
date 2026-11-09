@@ -113,7 +113,7 @@ export function Contact({ selectedService }: { selectedService: string }) {
             </p>
             <p>
               <span className="block text-[0.68rem] tracking-[0.2em] text-gold uppercase">Professional name</span>
-              Rey Paraiso / KURA YEY
+              Rey Paraiso / {site.secondaryName}
             </p>
             <p className="flex gap-3">
               <MapPin aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-gold" />

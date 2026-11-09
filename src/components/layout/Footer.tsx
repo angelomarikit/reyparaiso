@@ -10,7 +10,7 @@ export function Footer() {
         <RevealOnScroll className="mt-10 grid gap-10 md:grid-cols-3">
           <div>
             <p className="font-display text-2xl tracking-[0.16em]">REY PARAISO</p>
-            <p className="mt-2 text-[0.68rem] tracking-[0.28em] text-gold">KURA YEY</p>
+            <p className="mt-2 text-[0.68rem] tracking-[0.28em] text-gold">{site.secondaryName.toUpperCase()}</p>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-mist">{site.tagline}</p>
           </div>
           <nav aria-label="Footer">

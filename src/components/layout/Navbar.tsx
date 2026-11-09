@@ -43,7 +43,7 @@ export function Navbar() {
       <div className={`mx-auto flex max-w-7xl items-center justify-between px-5 md:px-10 lg:px-16 ${scrolled ? 'h-16' : 'h-20'}`}>
         <a href="#home" className="leading-tight" onClick={() => setOpen(false)}>
           <span className="block font-display text-sm tracking-[0.22em] text-warm">REY PARAISO</span>
-          <span className="block text-[0.62rem] tracking-[0.32em] text-gold">KURA YEY</span>
+          <span className="block text-[0.62rem] tracking-[0.32em] text-gold">TEACHER REY</span>
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">

@@ -86,7 +86,7 @@ const svg = Buffer.from(`<svg width="1200" height="630" viewBox="0 0 1200 630" x
   </defs>
   <rect width="1200" height="630" fill="url(#fade)"/>
   <rect x="72" y="168" width="56" height="2" fill="#C6A76A"/>
-  <text x="72" y="230" fill="#C6A76A" font-family="Georgia, serif" font-size="22" letter-spacing="6">KURA YEY</text>
+  <text x="72" y="230" fill="#C6A76A" font-family="Georgia, serif" font-size="22" letter-spacing="4">TEACHER REY</text>
   <text x="72" y="320" fill="#F8F7F3" font-family="Georgia, serif" font-size="72">Rey Paraiso</text>
   <text x="72" y="390" fill="#B6BECA" font-family="Georgia, sans-serif" font-size="26">Singer, Acoustic Performer</text>
   <text x="72" y="430" fill="#B6BECA" font-family="Georgia, sans-serif" font-size="26">&amp; Event Host in Cavite</text>
