@@ -19,8 +19,9 @@ export const navLinks = [
   { href: '#services', id: 'services', label: 'Services' },
   { href: '#achievements', id: 'achievements', label: 'Achievements' },
   { href: '#gallery', id: 'gallery', label: 'Gallery' },
-  { href: '#journey', id: 'journey', label: 'Journey' },
+  { href: '#new-collections', id: 'new-collections', label: 'Recent Sets' },
+  { href: '#featured-video', id: 'featured-video', label: 'Performance Video' },
   { href: '#contact', id: 'contact', label: 'Contact' },
 ] as const
 
-export const footerLinks = navLinks.filter((link) => link.id !== 'journey')
+export const footerLinks = navLinks

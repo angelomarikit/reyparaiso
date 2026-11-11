@@ -1,3 +1,5 @@
+import { galleryMemorable } from './galleryMemorable'
+
 export type GalleryCategory = 'live' | 'acoustic' | 'hosting' | 'personal'
 
 export type GalleryItem = {
@@ -20,7 +22,7 @@ export const galleryFilters = [
 
 export type GalleryFilter = (typeof galleryFilters)[number]['id']
 
-export const gallery: GalleryItem[] = [
+const galleryBase: GalleryItem[] = [
   {
     id: 'sing-close',
     alt: 'Rey Paraiso singing into a microphone while playing acoustic guitar',
@@ -265,6 +267,8 @@ export const gallery: GalleryItem[] = [
     objectPosition: '30% 55%',
   },
 ]
+
+export const gallery: GalleryItem[] = [...galleryBase, ...galleryMemorable]
 
 export function isWide(item: GalleryItem) {
   return item.width / item.height > 1.2

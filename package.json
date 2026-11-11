@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "optimize": "node scripts/optimize-images.mjs",
+    "import-new-media": "node scripts/import-new-media.mjs",
+    "import-leftover-gallery": "node scripts/import-leftover-gallery.mjs",
     "build": "tsc --noEmit && vite build && node scripts/prune-dist.mjs",
     "preview": "vite preview"
   },

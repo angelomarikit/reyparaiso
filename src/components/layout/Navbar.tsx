@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { hasFeaturedVideo, hasNewCollections } from '../../data/newCollections'
 import { navLinks } from '../../data/site'
 import { useActiveSection } from '../../hooks/useActiveSection'
 import { Button } from '../ui/Button'
 
-const sectionIds = navLinks.map((link) => link.id)
+const visibleNavLinks = navLinks.filter((link) => {
+  if (link.id === 'new-collections') return hasNewCollections
+  if (link.id === 'featured-video') return hasFeaturedVideo
+  return true
+})
+const sectionIds = visibleNavLinks.map((link) => link.id)
 
 export function Navbar() {
   const active = useActiveSection(sectionIds)
@@ -47,7 +53,7 @@ export function Navbar() {
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
-          {navLinks.map((link) => {
+          {visibleNavLinks.map((link) => {
             const current = active === link.id
             return (
               <a
@@ -88,7 +94,7 @@ export function Navbar() {
       {open ? (
         <nav id="mobile-menu" className="h-[calc(100svh-5rem)] overflow-y-auto px-6 pb-10 lg:hidden" aria-label="Mobile">
           <ul className="flex flex-col">
-            {navLinks.map((link) => (
+            {visibleNavLinks.map((link) => (
               <li key={link.id}>
                 <a
                   href={link.href}

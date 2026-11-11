@@ -6,7 +6,9 @@ import { About } from './components/sections/About'
 import { Achievements } from './components/sections/Achievements'
 import { BookingCTA } from './components/sections/BookingCTA'
 import { Contact } from './components/sections/Contact'
+import { FeaturedPerformance } from './components/sections/FeaturedPerformance'
 import { Gallery } from './components/sections/Gallery'
+import { NewCollections } from './components/sections/NewCollections'
 import { Hero } from './components/sections/Hero'
 import { Journey } from './components/sections/Journey'
 import { PhotoBand } from './components/sections/PhotoBand'
@@ -32,6 +34,8 @@ export default function App() {
         <PhotoBand />
         <Achievements />
         <Gallery />
+        <NewCollections />
+        <FeaturedPerformance />
         <Journey />
         <BookingCTA />
         <Contact selectedService={service} />

@@ -1,4 +1,11 @@
+import { hasFeaturedVideo, hasNewCollections } from '../../data/newCollections'
 import { footerLinks, site } from '../../data/site'
+
+const visibleFooterLinks = footerLinks.filter((link) => {
+  if (link.id === 'new-collections') return hasNewCollections
+  if (link.id === 'featured-video') return hasFeaturedVideo
+  return true
+})
 import { AnimatedDivider } from '../motion/AnimatedDivider'
 import { RevealOnScroll } from '../motion/RevealOnScroll'
 
@@ -15,7 +22,7 @@ export function Footer() {
           </div>
           <nav aria-label="Footer">
             <ul className="grid grid-cols-2 gap-3 text-sm">
-              {footerLinks.map((link) => (
+              {visibleFooterLinks.map((link) => (
                 <li key={link.id}>
                   <a href={link.href} className="text-mist transition-colors duration-200 hover:text-gold">
                     {link.label}
